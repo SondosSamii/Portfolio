@@ -1,0 +1,96 @@
+// More than 480px
+@media (min-width: 30em) {
+  :root {
+    font-size: 0.625rem;
+  }
+}
+
+// More than 640px
+@media (min-width: 40em) {
+  :root {
+    font-size: 0.75rem;
+  }
+}
+
+// More than 800px
+@media (min-width: 50em) {
+  nav {
+    grid-template-areas: "logo list";
+    padding-inline: 1em;
+
+    .menu-icon {
+      display: none;
+    }
+
+    ul {
+      position: static;
+      display: flex;
+      gap: 1em;
+    }
+  }
+
+  main {
+    justify-content: flex-start;
+    text-align: start;
+
+    div {
+      &.summary {
+        width: 80%;
+      }
+
+      &.drawing-bg {
+        top: 10%;
+        bottom: 10%;
+        background-position: 90% 20%;
+      }
+    }
+  }
+
+  section {
+    &.projects {
+      .card {
+        flex-basis: 40%;
+      }
+    }
+  }
+}
+
+// More than 960px
+@media (min-width: 60em) {
+  :root {
+    font-size: 0.875rem;
+  }
+
+  main {
+
+    div {
+      &.summary {
+        width: 70%;
+      }
+    }
+  }
+}
+
+// More than 1120px
+@media (min-width: 70em) {
+  :root {
+    font-size: 1rem;
+  }
+
+  main {
+
+    div {
+      &.summary {
+        width: 60%;
+      }
+    }
+  }
+
+  section {
+    &.projects {
+      .card {
+        flex-basis: 30%;
+      }
+    }
+  }
+}

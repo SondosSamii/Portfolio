@@ -1,0 +1,40 @@
+:root {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.625rem;
+  color: $main_light_color;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $main_dark_color;
+  margin: 0;
+  margin-bottom: 1000px;
+
+  a {
+    color: $main_light_color;
+    text-decoration: none;
+    cursor: pointer;
+
+    &.gradient-btn {
+      display: inline-block;
+      font-size: 1.25rem;
+      font-weight: 500;
+      background: $gradient_bg_color;
+      border-radius: 2em;
+      padding: 1em 2em;
+      margin-top: 1.25em;
+    }
+  }
+}
