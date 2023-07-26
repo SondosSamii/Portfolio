@@ -197,6 +197,20 @@ section.technologies div[role=progressbar] .progress .bar {
   border-radius: inherit;
   background: linear-gradient(90deg, #945DD6 0%, #6978D1 21%, #13adc7 100%);
 }
+section.technologies h3 {
+  font-size: 3rem;
+  padding-block: 1em;
+}
+section.technologies ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 2em;
+  padding-bottom: 2em;
+}
+section.technologies ul li {
+  flex-basis: 100%;
+  font-size: 2rem;
+}
 
 @media (min-width: 30em) {
   :root {
@@ -235,6 +249,9 @@ section.technologies div[role=progressbar] .progress .bar {
   }
   section.projects .card {
     flex-basis: 40%;
+  }
+  section.technologies ul li {
+    flex-basis: 50%;
   }
 }
 @media (min-width: 60em) {

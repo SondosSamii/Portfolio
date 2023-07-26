@@ -52,6 +52,14 @@
         flex-basis: 40%;
       }
     }
+
+    &.technologies {
+      ul {
+        li {
+          flex-basis: 50%;
+        }
+      }
+    }
   }
 }
 

@@ -194,6 +194,23 @@ section {
         }
       }
     }
+
+    h3 {
+      font-size: 3rem;
+      padding-block: 1em;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      padding-inline: 2em;
+      padding-bottom: 2em;
+
+      li {
+        flex-basis: 100%;
+        font-size: 2rem;
+      }
+    }
   }
 }
 
