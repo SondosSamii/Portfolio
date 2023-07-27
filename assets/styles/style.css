@@ -332,11 +332,6 @@ footer ul li a + a {
     gap: 1em;
     border-bottom: none;
   }
-  section.technologies ul {
-    justify-content: space-between;
-    -moz-column-gap: 2em;
-         column-gap: 2em;
-  }
 }
 @media (min-width: 60em) {
   :root {
