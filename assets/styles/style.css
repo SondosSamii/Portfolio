@@ -129,6 +129,9 @@ main div.drawing-bg {
   z-index: -1;
 }
 
+section {
+  margin-bottom: 2em;
+}
 section h2 {
   font-size: 3.5rem;
   padding-block: 1em;
@@ -255,6 +258,32 @@ section.about .experience header:last-of-type {
 }
 section.about .experience header:last-of-type span, section.about .experience header:last-of-type::before {
   top: 100%;
+}
+
+footer {
+  border-top: 1px solid #000;
+  padding-block: 1em;
+}
+footer h2 {
+  font-size: 3rem;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+footer .flex-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+footer .flex-row ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+footer .flex-row ul li {
+  font-size: 1.5rem;
+  padding-block: 0.25em;
+}
+footer .flex-row ul li a + a {
+  padding-left: 0.25em;
 }
 
 @media (min-width: 30em) {

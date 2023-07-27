@@ -109,6 +109,7 @@ main {
 }
 
 section {
+  margin-bottom: 2em;
 
   h2 {
     font-size: 3.5rem;
@@ -269,6 +270,37 @@ section {
         }
       }
 
+    }
+  }
+}
+
+footer {
+  border-top: 1px solid #000;
+  padding-block: 1em;
+
+  h2 {
+    font-size: 3rem;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+  }
+
+  .flex-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        font-size: 1.5rem;
+        padding-block: 0.25em;
+
+        a+a {
+          padding-left: 0.25em;
+        }
+      }
     }
   }
 }
