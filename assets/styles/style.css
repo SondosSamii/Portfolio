@@ -316,6 +316,7 @@ footer ul li a + a {
     position: static;
     display: flex;
     gap: 1em;
+    border-bottom: none;
   }
   section.technologies ul {
     justify-content: space-between;
