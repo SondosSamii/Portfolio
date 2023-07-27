@@ -208,6 +208,54 @@ section.technologies ul li {
   flex-basis: 100%;
   font-size: 1.75rem;
 }
+section.about .experience {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+section.about .experience header {
+  border-left: 0.4em solid #fff;
+  padding: 1em;
+  margin-left: 3em;
+  position: relative;
+}
+section.about .experience header h3 {
+  color: #13adc7;
+  font-size: 1.75rem;
+}
+section.about .experience header p {
+  font-size: 1.5rem;
+}
+section.about .experience header span {
+  color: #fff;
+  position: absolute;
+  left: -3.5em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+section.about .experience header::before {
+  content: "";
+  width: 1.2em;
+  height: 1.2em;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: -0.8em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+section.about .experience header:first-of-type {
+  padding-top: 0;
+}
+section.about .experience header:first-of-type span, section.about .experience header:first-of-type::before {
+  top: 0;
+}
+section.about .experience header:last-of-type {
+  padding-bottom: 0;
+}
+section.about .experience header:last-of-type span, section.about .experience header:last-of-type::before {
+  top: 100%;
+}
 
 @media (min-width: 30em) {
   section.projects .card {

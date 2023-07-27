@@ -208,6 +208,69 @@ section {
       }
     }
   }
+
+  &.about {
+    .experience {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      header {
+        border-left: 0.4em solid $main_light_color;
+        padding: 1em;
+        margin-left: 3em;
+        position: relative;
+
+        h3 {
+          color: $end_gradient_color;
+          font-size: 1.75rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+
+        span {
+          color: $main_light_color;
+          position: absolute;
+          left: -3.5em;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &::before {
+          content: "";
+          width: 1.2em;
+          height: 1.2em;
+          background-color: $main_light_color;
+          border-radius: 50%;
+          position: absolute;
+          left: -0.8em;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &:first-of-type {
+          padding-top: 0;
+
+          span,
+          &::before {
+            top: 0;
+          }
+        }
+
+        &:last-of-type {
+          padding-bottom: 0;
+
+          span,
+          &::before {
+            top: 100%;
+          }
+        }
+      }
+
+    }
+  }
 }
 
 @import "media_queries";
