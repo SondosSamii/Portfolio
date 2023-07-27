@@ -28,12 +28,17 @@ body {
 
     &.gradient-btn {
       display: inline-block;
-      font-size: 1.25rem;
+      font-size: inherit;
       font-weight: 500;
       background: $gradient_bg_color;
       border-radius: 2em;
       padding: 1em 2em;
       margin-top: 1.25em;
     }
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 2em;
   }
 }

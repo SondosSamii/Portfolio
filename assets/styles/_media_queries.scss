@@ -1,7 +1,11 @@
 // More than 480px
 @media (min-width: 30em) {
-  :root {
-    font-size: 0.625rem;
+  section {
+    &.projects {
+      .card {
+        flex-basis: 45%;
+      }
+    }
   }
 }
 
@@ -10,13 +14,25 @@
   :root {
     font-size: 0.75rem;
   }
+
+  body {
+    .container {
+      max-width: 90%;
+      margin: auto;
+    }
+  }
 }
 
 // More than 800px
 @media (min-width: 50em) {
+  body {
+    .container {
+      max-width: 85%;
+    }
+  }
+
   nav {
     grid-template-areas: "logo list";
-    padding-inline: 1em;
 
     .menu-icon {
       display: none;
@@ -29,34 +45,15 @@
     }
   }
 
-  main {
-    justify-content: flex-start;
-    text-align: start;
-
-    div {
-      &.summary {
-        width: 80%;
-      }
-
-      &.drawing-bg {
-        top: 10%;
-        bottom: 10%;
-        background-position: 90% 20%;
-      }
-    }
-  }
-
   section {
-    &.projects {
-      .card {
-        flex-basis: 40%;
-      }
-    }
-
     &.technologies {
       ul {
+        justify-content: space-between;
+
+        column-gap: 2em;
+
         li {
-          flex-basis: 50%;
+          flex-basis: 45%;
         }
       }
     }
@@ -69,11 +66,26 @@
     font-size: 0.875rem;
   }
 
+  body {
+    .container {
+      max-width: 80%;
+    }
+  }
+
   main {
+    justify-content: flex-start;
+    text-align: start;
 
     div {
       &.summary {
-        width: 70%;
+        width: 85%;
+      }
+
+      &.drawing-bg {
+        top: 10%;
+        bottom: 10%;
+        right: 0;
+        background-position: 90% 20%;
       }
     }
   }
@@ -85,20 +97,9 @@
     font-size: 1rem;
   }
 
-  main {
-
-    div {
-      &.summary {
-        width: 60%;
-      }
-    }
-  }
-
-  section {
-    &.projects {
-      .card {
-        flex-basis: 30%;
-      }
+  body {
+    .container {
+      max-width: 75%;
     }
   }
 }
