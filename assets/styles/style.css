@@ -208,6 +208,47 @@ section.technologies ul li {
   flex-basis: 100%;
   font-size: 1.75rem;
 }
+section.about .experience {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+section.about .experience p {
+  border-left: 5px solid #fff;
+  font-size: 1.5rem;
+  position: relative;
+}
+section.about .experience p::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: -0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+section.about .experience p::after {
+  content: "2018";
+  color: #fff;
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+section.about .experience p:first-of-type {
+  padding-top: 0;
+}
+section.about .experience p:first-of-type::before {
+  top: 0;
+}
+section.about .experience p:last-of-type {
+  padding-bottom: 0;
+}
+section.about .experience p:last-of-type::before {
+  top: 100%;
+}
 
 @media (min-width: 30em) {
   section.projects .card {
