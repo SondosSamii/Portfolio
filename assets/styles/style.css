@@ -272,16 +272,16 @@ footer h2 {
   padding-top: 1em;
   padding-bottom: 0.5em;
 }
-footer .contact-me ul {
+footer ul {
   list-style-type: none;
   padding-left: 0;
 }
-footer .contact-me ul li {
+footer ul li {
   font-size: 1.5rem;
   font-size: 1.375rem;
   padding-block: 0.25em;
 }
-footer .contact-me ul li a + a {
+footer ul li a + a {
   padding-left: 0.25em;
 }
 
@@ -289,12 +289,7 @@ footer .contact-me ul li a + a {
   section.projects .card {
     flex-basis: 45%;
   }
-  footer .contact-me {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-  }
-  footer .contact-me ul li {
+  footer ul li {
     font-size: 1.5rem;
   }
 }

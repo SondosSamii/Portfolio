@@ -9,16 +9,10 @@
   }
 
   footer {
-    .contact-me {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
+    ul {
 
-      ul {
-
-        li {
-          font-size: 1.5rem;
-        }
+      li {
+        font-size: 1.5rem;
       }
     }
   }

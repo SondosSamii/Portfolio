@@ -288,20 +288,17 @@ footer {
     padding-bottom: 0.5em;
   }
 
-  .contact-me {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
 
-    ul {
-      list-style-type: none;
-      padding-left: 0;
+    li {
+      font-size: 1.5rem;
+      font-size: 1.375rem;
+      padding-block: 0.25em;
 
-      li {
-        font-size: 1.5rem;
-        font-size: 1.375rem;
-        padding-block: 0.25em;
-
-        a+a {
-          padding-left: 0.25em;
-        }
+      a+a {
+        padding-left: 0.25em;
       }
     }
   }
