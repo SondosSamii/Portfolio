@@ -112,6 +112,9 @@ main {
 main div.summary h1 {
   font-size: 4rem;
   margin-bottom: 0.25em;
+  background: linear-gradient(90deg, #945DD6 0%, #6978D1 50%, #13adc7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 main div.summary h1 span {
   font-size: 1.5rem;
@@ -230,7 +233,7 @@ section.about .experience header {
 section.about .experience header h3 {
   color: #13adc7;
   font-size: 1.75rem;
-  transition: color 0.25s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 section.about .experience header h3:hover {
   color: #945DD6;
