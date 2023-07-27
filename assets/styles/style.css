@@ -167,16 +167,16 @@ section.projects .card {
   align-items: center;
 }
 section.projects .card:first-of-type {
-  background-image: url(/assets/images/projects/study.png);
+  background-image: url(../images/projects/study.png);
 }
 section.projects .card:nth-of-type(2) {
-  background-image: url(/assets/images/projects/1-space.jpg);
+  background-image: url(../images/projects/1-space.jpg);
 }
 section.projects .card:nth-of-type(3) {
-  background-image: url(/assets/images/projects/kasper.png);
+  background-image: url(../images/projects/kasper.png);
 }
 section.projects .card:nth-of-type(4) {
-  background-image: url(/assets/images/projects/coder-bites.png);
+  background-image: url(../images/projects/coder-bites.png);
 }
 section.projects .card .bg-overlay {
   position: absolute;
