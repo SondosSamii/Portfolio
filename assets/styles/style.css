@@ -201,9 +201,11 @@ section.technologies div[role=progressbar] .progress {
   border-radius: 83px;
 }
 section.technologies div[role=progressbar] .progress .bar {
+  width: 0;
   height: inherit;
   border-radius: inherit;
   background: linear-gradient(90deg, #945DD6 0%, #6978D1 21%, #13adc7 100%);
+  transition: width 2s ease-in-out;
 }
 section.technologies h3 {
   font-size: 1.5rem;

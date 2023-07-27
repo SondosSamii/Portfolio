@@ -194,9 +194,11 @@ section {
         border-radius: 83px;
 
         .bar {
+          width: 0;
           height: inherit;
           border-radius: inherit;
           background: $gradient_bg_color;
+          transition: width 2s ease-in-out;
         }
       }
     }

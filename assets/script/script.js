@@ -12,3 +12,18 @@ menuBtn.addEventListener("click", function () {
     navList.style.left = "100%";
   }
 });
+
+const technologies = document.getElementById("technologies");
+
+const progressBars = technologies.querySelectorAll(".progress .bar");
+
+function technologiesUpInView() {
+  if (technologies.getBoundingClientRect().top <= window.innerHeight) {
+    for (const bar of progressBars) {
+      bar.style.width = bar.dataset.width;
+    }
+    document.removeEventListener("scroll", technologiesUpInView);
+  }
+}
+
+document.addEventListener("scroll", technologiesUpInView);
