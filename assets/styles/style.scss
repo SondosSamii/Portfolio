@@ -1,3 +1,4 @@
+@import "variables";
 @import "colors";
 @import "global";
 
@@ -198,8 +199,8 @@ section {
     ul {
       display: flex;
       flex-wrap: wrap;
-      padding-inline: $inline_padding;
-      padding-bottom: $inline_padding;
+      padding-inline: $main_padding;
+      padding-bottom: $main_padding;
 
       li {
         flex-basis: 100%;
@@ -207,7 +208,6 @@ section {
       }
     }
   }
-
 }
 
 @import "media_queries";
