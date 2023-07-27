@@ -70,6 +70,9 @@ nav .menu-icon {
   cursor: pointer;
   font-size: 3rem;
 }
+nav .menu-icon:focus-visible {
+  outline: none;
+}
 nav .menu-icon svg {
   font-size: inherit;
 }
@@ -269,26 +272,30 @@ footer h2 {
   padding-top: 1em;
   padding-bottom: 0.5em;
 }
-footer .flex-row {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-footer .flex-row ul {
+footer .contact-me ul {
   list-style-type: none;
   padding-left: 0;
 }
-footer .flex-row ul li {
+footer .contact-me ul li {
   font-size: 1.5rem;
+  font-size: 1.375rem;
   padding-block: 0.25em;
 }
-footer .flex-row ul li a + a {
+footer .contact-me ul li a + a {
   padding-left: 0.25em;
 }
 
 @media (min-width: 30em) {
   section.projects .card {
     flex-basis: 45%;
+  }
+  footer .contact-me {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  footer .contact-me ul li {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 40em) {

@@ -7,6 +7,21 @@
       }
     }
   }
+
+  footer {
+    .contact-me {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      ul {
+
+        li {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
 }
 
 // More than 640px
