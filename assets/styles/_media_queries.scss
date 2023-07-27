@@ -42,6 +42,11 @@
 
   nav {
     grid-template-areas: "logo list";
+    padding: 1em;
+
+    .logo {
+      padding-inline-start: 0;
+    }
 
     .menu-icon {
       display: none;
