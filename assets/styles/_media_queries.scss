@@ -1,13 +1,5 @@
 // More than 480px
 @media (min-width: 30em) {
-  section {
-    &.projects {
-      .card {
-        flex-basis: 45%;
-      }
-    }
-  }
-
   footer {
     ul {
 
@@ -28,6 +20,15 @@
     .container {
       max-width: 90%;
       margin: auto;
+    }
+  }
+
+  section {
+    &.projects {
+      .card {
+        height: 400px;
+        flex-basis: 45%;
+      }
     }
   }
 }

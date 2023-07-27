@@ -135,11 +135,68 @@ section {
     }
 
     .card {
-      flex-basis: 80%;
-      padding: $main_padding;
-      box-shadow: 0px 0px 7px $main_light_color;
+      height: 280px;
+      flex-basis: 90%;
+      padding: 1.5em;
+      box-shadow: 0px 0px 7px $end_gradient_color;
       border-top-left-radius: 25px;
       border-bottom-right-radius: 25px;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      transition: box-shadow 0.2s ease-in-out;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+
+      &:first-of-type {
+        background-image: url(/assets/images/projects/study.png);
+      }
+
+      &:nth-of-type(2) {
+        background-image: url(/assets/images/projects/1-space.jpg);
+      }
+
+      &:nth-of-type(3) {
+        background-image: url(/assets/images/projects/kasper.png);
+      }
+
+      &:nth-of-type(4) {
+        background-image: url(/assets/images/projects/coder-bites.png);
+      }
+
+      .bg-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      .text-overlay {
+        opacity: 1;
+        z-index: 2;
+        position: relative;
+        top: 100%;
+        right: 100%;
+        transition: opacity 0.2s ease-in-out, top 0.2s ease-in-out, right 0.2s ease-in-out;
+      }
+
+      &:hover {
+        .bg-overlay {
+          background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .text-overlay {
+          opacity: 1;
+          top: 0;
+          right: 0;
+        }
+      }
 
       img {
         max-width: 100%;
@@ -148,11 +205,11 @@ section {
       }
 
       h3 {
-        font-size: 2rem;
+        font-size: 1.75rem;
         text-align: center;
         text-transform: uppercase;
         position: relative;
-        padding-block: 0.75em;
+        padding-bottom: 0.75em;
 
         &::after {
           content: "";
@@ -166,11 +223,12 @@ section {
       }
 
       p {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        color: $main_light_color;
       }
 
       .gradient-btn {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
       }
     }
   }
