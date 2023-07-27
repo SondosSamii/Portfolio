@@ -77,6 +77,10 @@ main {
   position: relative;
 
   div {
+    &.container {
+      padding: 0;
+    }
+
     &.summary {
 
       h1 {

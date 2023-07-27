@@ -112,6 +112,9 @@ main {
   padding-inline: 2em;
   position: relative;
 }
+main div.container {
+  padding: 0;
+}
 main div.summary h1 {
   font-size: 4rem;
   margin-bottom: 0.25em;
