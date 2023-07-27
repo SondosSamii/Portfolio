@@ -64,11 +64,10 @@
     &.technologies {
       ul {
         justify-content: space-between;
-
         column-gap: 2em;
 
         li {
-          flex-basis: 45%;
+          // flex-basis: 45%;
         }
       }
     }

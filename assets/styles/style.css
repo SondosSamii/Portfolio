@@ -206,7 +206,7 @@ section.technologies div[role=progressbar] .progress .bar {
   background: linear-gradient(90deg, #945DD6 0%, #6978D1 21%, #13adc7 100%);
 }
 section.technologies h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-block: 1em;
 }
 section.technologies ul {
@@ -216,8 +216,9 @@ section.technologies ul {
   padding-bottom: 2em;
 }
 section.technologies ul li {
-  flex-basis: 100%;
-  font-size: 1.75rem;
+  flex-basis: 80%;
+  flex-grow: 1;
+  font-size: 1.5rem;
 }
 section.about .experience {
   display: flex;
@@ -335,9 +336,6 @@ footer ul li a + a {
     justify-content: space-between;
     -moz-column-gap: 2em;
          column-gap: 2em;
-  }
-  section.technologies ul li {
-    flex-basis: 45%;
   }
 }
 @media (min-width: 60em) {
