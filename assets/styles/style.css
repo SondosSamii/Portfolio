@@ -21,6 +21,10 @@ body {
   background-color: #0F1624;
   margin: 0;
 }
+body .container {
+  max-width: 100%;
+  padding: 1em 2em;
+}
 body a {
   color: #fff;
   text-decoration: none;
@@ -35,9 +39,11 @@ body a.gradient-btn {
   padding: 1em 2em;
   margin-top: 1.25em;
 }
-body .container {
-  max-width: 100%;
-  padding: 1em 2em;
+body .gradient-btn + .gradient-btn {
+  background: linear-gradient(90deg, #13adc7 0%, #6978D1 70%, #945DD6 100%);
+}
+body button:focus-visible {
+  outline: none;
 }
 
 nav {
@@ -71,9 +77,6 @@ nav .menu-icon {
   cursor: pointer;
   font-size: 3rem;
   padding-inline-end: 2rem;
-}
-nav .menu-icon:focus-visible {
-  outline: none;
 }
 nav .menu-icon svg {
   font-size: inherit;

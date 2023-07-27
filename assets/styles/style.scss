@@ -37,10 +37,6 @@ nav {
     font-size: 3rem;
     padding-inline-end: 2rem;
 
-    &:focus-visible {
-      outline: none;
-    }
-
     svg {
       font-size: inherit;
     }
@@ -218,7 +214,7 @@ section {
           left: 15%;
           width: 70%;
           height: 2px;
-          background: $gradient_bg_color;
+          background: $main_gradient_bg_color;
         }
       }
 
@@ -255,7 +251,7 @@ section {
           width: 0;
           height: inherit;
           border-radius: inherit;
-          background: $gradient_bg_color;
+          background: $main_gradient_bg_color;
           transition: width 2s ease-in-out;
         }
       }
