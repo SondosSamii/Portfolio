@@ -103,14 +103,14 @@ nav a {
   font-size: 1.875rem;
 }
 
-section {
+main > section {
   margin-bottom: 2em;
 }
-section h2 {
+main > section h2 {
   font-size: 3.5rem;
   padding-block: 1em;
 }
-section.home {
+main > section.home {
   height: 90vh;
   display: flex;
   align-items: center;
@@ -119,25 +119,25 @@ section.home {
   padding-inline: 2em;
   position: relative;
 }
-section.home div.container {
+main > section.home div.container {
   padding: 0;
 }
-section.home div.summary h1 {
+main > section.home div.summary h1 {
   font-size: 4rem;
   margin-bottom: 0.25em;
   background: linear-gradient(90deg, #945DD6 0%, #6978D1 50%, #13adc7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-section.home div.summary h1 span {
+main > section.home div.summary h1 span {
   font-size: 1.5rem;
   color: #13adc7;
 }
-section.home div.summary p {
+main > section.home div.summary p {
   font-size: 1.5rem;
   font-weight: 400;
 }
-section.home div.drawing-bg {
+main > section.home div.drawing-bg {
   position: absolute;
   top: 5%;
   bottom: 5%;
@@ -149,13 +149,13 @@ section.home div.drawing-bg {
   background-size: contain;
   z-index: -1;
 }
-section.projects .flex-row {
+main > section.projects .flex-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   row-gap: 2em;
 }
-section.projects .card {
+main > section.projects .card {
   height: 280px;
   flex-basis: 90%;
   padding: 1.5em;
@@ -171,19 +171,19 @@ section.projects .card {
   display: flex;
   align-items: center;
 }
-section.projects .card:first-of-type {
+main > section.projects .card:first-of-type {
   background-image: url(../images/projects/study.png);
 }
-section.projects .card:nth-of-type(2) {
+main > section.projects .card:nth-of-type(2) {
   background-image: url(../images/projects/1-space.jpg);
 }
-section.projects .card:nth-of-type(3) {
+main > section.projects .card:nth-of-type(3) {
   background-image: url(../images/projects/kasper.png);
 }
-section.projects .card:nth-of-type(4) {
+main > section.projects .card:nth-of-type(4) {
   background-image: url(../images/projects/coder-bites.png);
 }
-section.projects .card .bg-overlay {
+main > section.projects .card .bg-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -193,7 +193,7 @@ section.projects .card .bg-overlay {
   border-bottom-right-radius: 25px;
   transition: background-color 0.2s ease-in-out;
 }
-section.projects .card .text-overlay {
+main > section.projects .card .text-overlay {
   opacity: 1;
   z-index: 2;
   position: relative;
@@ -201,27 +201,27 @@ section.projects .card .text-overlay {
   right: 100%;
   transition: opacity 0.2s ease-in-out, top 0.2s ease-in-out, right 0.2s ease-in-out;
 }
-section.projects .card:hover .bg-overlay {
+main > section.projects .card:hover .bg-overlay {
   background-color: rgba(0, 0, 0, 0.9);
 }
-section.projects .card:hover .text-overlay {
+main > section.projects .card:hover .text-overlay {
   opacity: 1;
   top: 0;
   right: 0;
 }
-section.projects .card img {
+main > section.projects .card img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
-section.projects .card h3 {
+main > section.projects .card h3 {
   font-size: 1.75rem;
   text-align: center;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 0.75em;
 }
-section.projects .card h3::after {
+main > section.projects .card h3::after {
   content: "";
   position: absolute;
   bottom: 0.5em;
@@ -230,82 +230,82 @@ section.projects .card h3::after {
   height: 2px;
   background: linear-gradient(90deg, #945DD6 0%, #6978D1 21%, #13adc7 100%);
 }
-section.projects .card p {
+main > section.projects .card p {
   font-size: 1.25rem;
   color: #fff;
 }
-section.projects .card .gradient-btn {
+main > section.projects .card .gradient-btn {
   font-size: 1.15rem;
 }
-section.technologies div[role=progressbar] {
+main > section.technologies div[role=progressbar] {
   padding-bottom: 2em;
 }
-section.technologies div[role=progressbar] p {
+main > section.technologies div[role=progressbar] p {
   display: flex;
   justify-content: space-between;
   padding-inline: 1em;
   font-size: 1.5rem;
   font-weight: 600;
 }
-section.technologies div[role=progressbar] .progress {
+main > section.technologies div[role=progressbar] .progress {
   width: 100%;
   height: 2em;
   background-color: #162950;
   border-radius: 83px;
 }
-section.technologies div[role=progressbar] .progress .bar {
+main > section.technologies div[role=progressbar] .progress .bar {
   width: 0;
   height: inherit;
   border-radius: inherit;
   background: linear-gradient(90deg, #945DD6 0%, #6978D1 21%, #13adc7 100%);
   transition: width 2s ease-in-out;
 }
-section.technologies h3 {
+main > section.technologies h3 {
   font-size: 1.5rem;
   padding-block: 1em;
 }
-section.technologies ul {
+main > section.technologies ul {
   display: flex;
   flex-wrap: wrap;
   padding-inline: 2em;
   padding-bottom: 2em;
 }
-section.technologies ul li {
+main > section.technologies ul li {
   flex-basis: 80%;
   flex-grow: 1;
   font-size: 1.5rem;
 }
-section.about .experience {
+main > section.about .experience {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-section.about .experience section {
+main > section.about .experience section {
   border-left: 0.4em solid #fff;
   padding: 1em;
   margin-left: 3em;
   margin-bottom: 0;
   position: relative;
 }
-section.about .experience section h3 {
+main > section.about .experience section h3 {
   color: #13adc7;
   font-size: 1.75rem;
   transition: color 0.2s ease-in-out;
 }
-section.about .experience section h3:hover {
+main > section.about .experience section h3:hover {
   color: #945DD6;
 }
-section.about .experience section p {
+main > section.about .experience section p {
   font-size: 1.5rem;
 }
-section.about .experience section span {
+main > section.about .experience section span {
   color: #fff;
   position: absolute;
   left: -3.5em;
   top: 50%;
   transform: translateY(-50%);
 }
-section.about .experience section::before {
+main > section.about .experience section::before {
   content: "";
   width: 1.2em;
   height: 1.2em;
@@ -316,16 +316,16 @@ section.about .experience section::before {
   top: 50%;
   transform: translateY(-50%);
 }
-section.about .experience section:first-of-type {
+main > section.about .experience section:first-of-type {
   padding-top: 0;
 }
-section.about .experience section:first-of-type span, section.about .experience section:first-of-type::before {
+main > section.about .experience section:first-of-type span, main > section.about .experience section:first-of-type::before {
   top: 0;
 }
-section.about .experience section:last-of-type {
+main > section.about .experience section:last-of-type {
   padding-bottom: 0;
 }
-section.about .experience section:last-of-type span, section.about .experience section:last-of-type::before {
+main > section.about .experience section:last-of-type span, main > section.about .experience section:last-of-type::before {
   top: 100%;
 }
 
@@ -364,7 +364,7 @@ footer ul li a + a {
     max-width: 90%;
     margin: auto;
   }
-  section.projects .card {
+  main > section.projects .card {
     height: 400px;
     flex-basis: 45%;
   }
@@ -397,14 +397,14 @@ footer ul li a + a {
   body .container {
     max-width: 80%;
   }
-  section.home {
+  main > section.home {
     justify-content: flex-start;
     text-align: start;
   }
-  section.home div.summary {
+  main > section.home div.summary {
     width: 85%;
   }
-  section.home div.drawing-bg {
+  main > section.home div.drawing-bg {
     top: 10%;
     bottom: 10%;
     right: 0;
