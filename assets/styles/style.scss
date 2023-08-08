@@ -286,10 +286,11 @@ section {
       flex-direction: column;
       flex-wrap: wrap;
 
-      header {
+      section {
         border-left: 0.4em solid $main_light_color;
         padding: 1em;
         margin-left: 3em;
+        margin-bottom: 0;
         position: relative;
 
         h3 {

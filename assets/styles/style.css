@@ -281,31 +281,32 @@ section.about .experience {
   flex-direction: column;
   flex-wrap: wrap;
 }
-section.about .experience header {
+section.about .experience section {
   border-left: 0.4em solid #fff;
   padding: 1em;
   margin-left: 3em;
+  margin-bottom: 0;
   position: relative;
 }
-section.about .experience header h3 {
+section.about .experience section h3 {
   color: #13adc7;
   font-size: 1.75rem;
   transition: color 0.2s ease-in-out;
 }
-section.about .experience header h3:hover {
+section.about .experience section h3:hover {
   color: #945DD6;
 }
-section.about .experience header p {
+section.about .experience section p {
   font-size: 1.5rem;
 }
-section.about .experience header span {
+section.about .experience section span {
   color: #fff;
   position: absolute;
   left: -3.5em;
   top: 50%;
   transform: translateY(-50%);
 }
-section.about .experience header::before {
+section.about .experience section::before {
   content: "";
   width: 1.2em;
   height: 1.2em;
@@ -316,16 +317,16 @@ section.about .experience header::before {
   top: 50%;
   transform: translateY(-50%);
 }
-section.about .experience header:first-of-type {
+section.about .experience section:first-of-type {
   padding-top: 0;
 }
-section.about .experience header:first-of-type span, section.about .experience header:first-of-type::before {
+section.about .experience section:first-of-type span, section.about .experience section:first-of-type::before {
   top: 0;
 }
-section.about .experience header:last-of-type {
+section.about .experience section:last-of-type {
   padding-bottom: 0;
 }
-section.about .experience header:last-of-type span, section.about .experience header:last-of-type::before {
+section.about .experience section:last-of-type span, section.about .experience section:last-of-type::before {
   top: 100%;
 }
 
