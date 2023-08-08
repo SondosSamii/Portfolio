@@ -1,4 +1,4 @@
-document.getElementById("this_year").innerHTML = new Date().getFullYear();
+document.getElementById("this_year").textContent = new Date().getFullYear();
 
 const menuBtn = document.getElementById("menu_icon");
 
