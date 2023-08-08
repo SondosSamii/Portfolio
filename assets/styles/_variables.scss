@@ -1,1 +1,12 @@
 $main_padding: 2em;
+
+// Colors
+$main_dark_color: #0F1624;
+$main_light_color: #fff;
+$secondary_dark_color: #162950;
+$base_gradient_color: #945DD6;
+$mid_gradient_color: #6978D1;
+$end_gradient_color: #13adc7;
+$main_gradient_bg_color: linear-gradient(90deg, $base_gradient_color 0%, $mid_gradient_color 21%, $end_gradient_color 100%);
+$secondary_gradient_bg_color: linear-gradient(90deg, $end_gradient_color 0%, $mid_gradient_color 70%, $base_gradient_color 100%);
+$text_gradient_bg_color: linear-gradient(90deg, $base_gradient_color 0%, $mid_gradient_color 50%, $end_gradient_color 100%);
