@@ -170,6 +170,7 @@ main > section.projects .card {
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 main > section.projects .card:first-of-type {
   background-image: url(../images/projects/study.png);

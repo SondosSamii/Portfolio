@@ -148,6 +148,7 @@ main>section {
       overflow: hidden;
       display: flex;
       align-items: center;
+      justify-content: center;
 
       &:first-of-type {
         background-image: url(../images/projects/study.png);
