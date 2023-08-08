@@ -66,62 +66,62 @@ nav {
   }
 }
 
-main {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-inline: $main_padding;
-  position: relative;
-
-  div {
-    &.container {
-      padding: 0;
-    }
-
-    &.summary {
-
-      h1 {
-        font-size: 4rem;
-        margin-bottom: 0.25em;
-        background: $text_gradient_bg_color;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-        span {
-          font-size: 1.5rem;
-          color: $end_gradient_color;
-        }
-      }
-
-      p {
-        font-size: 1.5rem;
-        font-weight: 400;
-      }
-    }
-
-    &.drawing-bg {
-      position: absolute;
-      top: 5%;
-      bottom: 5%;
-      right: 5%;
-      left: 5%;
-      background-image: url(../images/drawing.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      z-index: -1
-    }
-  }
-}
-
 section {
   margin-bottom: 2em;
 
   h2 {
     font-size: 3.5rem;
     padding-block: 1em;
+  }
+
+  &.home {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-inline: $main_padding;
+    position: relative;
+
+    div {
+      &.container {
+        padding: 0;
+      }
+
+      &.summary {
+
+        h1 {
+          font-size: 4rem;
+          margin-bottom: 0.25em;
+          background: $text_gradient_bg_color;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          span {
+            font-size: 1.5rem;
+            color: $end_gradient_color;
+          }
+        }
+
+        p {
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
+      }
+
+      &.drawing-bg {
+        position: absolute;
+        top: 5%;
+        bottom: 5%;
+        right: 5%;
+        left: 5%;
+        background-image: url(../images/drawing.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        z-index: -1
+      }
+    }
   }
 
   &.projects {

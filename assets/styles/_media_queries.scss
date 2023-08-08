@@ -74,20 +74,22 @@
     }
   }
 
-  main {
-    justify-content: flex-start;
-    text-align: start;
+  section {
+    &.home {
+      justify-content: flex-start;
+      text-align: start;
 
-    div {
-      &.summary {
-        width: 85%;
-      }
+      div {
+        &.summary {
+          width: 85%;
+        }
 
-      &.drawing-bg {
-        top: 10%;
-        bottom: 10%;
-        right: 0;
-        background-position: 90% 20%;
+        &.drawing-bg {
+          top: 10%;
+          bottom: 10%;
+          right: 0;
+          background-position: 90% 20%;
+        }
       }
     }
   }

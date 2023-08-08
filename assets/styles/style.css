@@ -103,7 +103,14 @@ nav a {
   font-size: 1.875rem;
 }
 
-main {
+section {
+  margin-bottom: 2em;
+}
+section h2 {
+  font-size: 3.5rem;
+  padding-block: 1em;
+}
+section.home {
   height: 90vh;
   display: flex;
   align-items: center;
@@ -112,25 +119,25 @@ main {
   padding-inline: 2em;
   position: relative;
 }
-main div.container {
+section.home div.container {
   padding: 0;
 }
-main div.summary h1 {
+section.home div.summary h1 {
   font-size: 4rem;
   margin-bottom: 0.25em;
   background: linear-gradient(90deg, #945DD6 0%, #6978D1 50%, #13adc7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-main div.summary h1 span {
+section.home div.summary h1 span {
   font-size: 1.5rem;
   color: #13adc7;
 }
-main div.summary p {
+section.home div.summary p {
   font-size: 1.5rem;
   font-weight: 400;
 }
-main div.drawing-bg {
+section.home div.drawing-bg {
   position: absolute;
   top: 5%;
   bottom: 5%;
@@ -141,14 +148,6 @@ main div.drawing-bg {
   background-position: center;
   background-size: contain;
   z-index: -1;
-}
-
-section {
-  margin-bottom: 2em;
-}
-section h2 {
-  font-size: 3.5rem;
-  padding-block: 1em;
 }
 section.projects .flex-row {
   display: flex;
@@ -398,14 +397,14 @@ footer ul li a + a {
   body .container {
     max-width: 80%;
   }
-  main {
+  section.home {
     justify-content: flex-start;
     text-align: start;
   }
-  main div.summary {
+  section.home div.summary {
     width: 85%;
   }
-  main div.drawing-bg {
+  section.home div.drawing-bg {
     top: 10%;
     bottom: 10%;
     right: 0;
