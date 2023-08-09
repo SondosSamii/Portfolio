@@ -1,7 +1,7 @@
 @import "variables";
 @import "global";
 
-nav {
+body>header {
   display: grid;
   grid-template-areas: "logo menu"
     "list list";
@@ -41,7 +41,7 @@ nav {
     }
   }
 
-  ul {
+  nav>ul {
     grid-area: list;
     list-style-type: none;
     padding-left: 0;
@@ -415,28 +415,28 @@ footer {
 // More than 800px
 @media (min-width: 50em) {
   body {
+    &>header {
+      grid-template-areas: "logo list";
+      padding: 1em;
+
+      .logo {
+        padding-inline-start: 0;
+      }
+
+      .menu-icon {
+        display: none;
+      }
+
+      nav>ul {
+        position: static;
+        display: flex;
+        gap: 1em;
+        border-bottom: none;
+      }
+    }
+
     .container {
       max-width: 85%;
-    }
-  }
-
-  nav {
-    grid-template-areas: "logo list";
-    padding: 1em;
-
-    .logo {
-      padding-inline-start: 0;
-    }
-
-    .menu-icon {
-      display: none;
-    }
-
-    ul {
-      position: static;
-      display: flex;
-      gap: 1em;
-      border-bottom: none;
     }
   }
 }
@@ -480,11 +480,11 @@ footer {
     font-size: 1rem;
   }
 
-  nav {
-    padding-inline: 5em;
-  }
-
   body {
+    &>header {
+      padding-inline: 5em;
+    }
+
     .container {
       max-width: 75%;
     }
