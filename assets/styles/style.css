@@ -282,7 +282,6 @@ main > section.about .experience {
   flex-wrap: wrap;
 }
 main > section.about .experience section {
-  border-left: 0.4em solid #fff;
   padding: 1em;
   margin-left: 3em;
   margin-bottom: 0;
@@ -293,6 +292,9 @@ main > section.about .experience section h3 {
   font-size: 1.75rem;
   transition: color 0.2s ease-in-out;
 }
+main > section.about .experience section h3 a {
+  color: inherit;
+}
 main > section.about .experience section h3:hover {
   color: #945DD6;
 }
@@ -300,11 +302,11 @@ main > section.about .experience section p {
   font-size: 1.5rem;
 }
 main > section.about .experience section span {
-  color: #fff;
   position: absolute;
-  left: -3.5em;
   top: 50%;
   transform: translateY(-50%);
+  left: -3.5em;
+  color: #fff;
 }
 main > section.about .experience section::before {
   content: "";
@@ -313,21 +315,23 @@ main > section.about .experience section::before {
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  left: -0.8em;
   top: 50%;
   transform: translateY(-50%);
+  left: -0.8em;
 }
-main > section.about .experience section:first-of-type {
-  padding-top: 0;
-}
-main > section.about .experience section:first-of-type span, main > section.about .experience section:first-of-type::before {
+main > section.about .experience section::after {
+  content: "";
+  border-left: 0.4em solid #fff;
+  position: absolute;
   top: 0;
+  bottom: 0;
+  left: -0.4em;
 }
-main > section.about .experience section:last-of-type {
-  padding-bottom: 0;
+main > section.about .experience section:first-of-type::after {
+  top: 50%;
 }
-main > section.about .experience section:last-of-type span, main > section.about .experience section:last-of-type::before {
-  top: 100%;
+main > section.about .experience section:last-of-type::after {
+  bottom: 50%;
 }
 
 footer {

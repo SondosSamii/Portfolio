@@ -10,3 +10,9 @@ $end_gradient_color: #13adc7;
 $main_gradient_bg_color: linear-gradient(90deg, $base_gradient_color 0%, $mid_gradient_color 21%, $end_gradient_color 100%);
 $secondary_gradient_bg_color: linear-gradient(90deg, $end_gradient_color 0%, $mid_gradient_color 70%, $base_gradient_color 100%);
 $text_gradient_bg_color: linear-gradient(90deg, $base_gradient_color 0%, $mid_gradient_color 50%, $end_gradient_color 100%);
+
+@mixin top-50 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
